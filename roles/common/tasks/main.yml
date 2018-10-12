@@ -1,0 +1,22 @@
+---
+
+- name: Update the OS
+  apt:
+    update_cache: yes
+  become: yes
+  become_method: sudo
+
+- name: Update all packages to the latest version
+  apt:
+    upgrade: dist
+  become: yes
+  become_method: sudo
+
+- name: install basic packages
+  apt: package={{ item }}  update_cache=yes
+  with_items:
+  - jq
+  - tree
+  - python-yaml
+  become: yes
+  become_method: sudo

@@ -1,0 +1,12 @@
+{
+  "builders": [
+
+  ],
+
+  "provisioners": [
+    {
+      "type": "shell",
+      "script": "setup_things.sh"
+    }
+  ]
+}
