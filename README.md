@@ -1,1 +1,4 @@
-# titan
+# TITAN
+
+Provisioning & Orchestration management.
+
